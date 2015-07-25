@@ -84,6 +84,16 @@ cacheSolve <- function(x, ...) {
 #[1,]   -2  1.5
 #[2,] 
 
+
+##Testing cached Data .
+# cacheSolve(m)
+#getting cached data
+#[,1] [,2]
+#[1,]   -2  1.5
+#[2,] 
+
+
+
 #---Solving the matrix---
 
 #> solve(x)

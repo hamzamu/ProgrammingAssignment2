@@ -1,4 +1,7 @@
 
+#Matrix inversion is usually a costly computation , here we will be caching the inverse of a matrix 
+#rather than compute it repeatedly .
+
 
 ## makeCacheMatrix
 
@@ -61,3 +64,30 @@ cacheSolve <- function(x, ...) {
   
   inverse
 }
+
+
+##TESTING .
+
+#------ Setting Matrix .
+#> x <- matrix(1:4 , 2 , 2)
+#> x
+#[,1] [,2]
+#[1,]    1    3
+#[2,]    2    4
+
+
+# m <- makeCacheMatrix(x)
+# cacheSolve(m)
+#----
+#getting cached data
+#[,1] [,2]
+#[1,]   -2  1.5
+#[2,] 
+
+#---Solving the matrix---
+
+#> solve(x)
+#----
+#[,1] [,2]
+#[1,]   -2  1.5
+#[2,]    1 -0.5
